@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+    <persistence-unit name="default">
+        <class>com.abctreinamentoswassabi.DTO.ClienteEntity</class>
+        <class>com.abctreinamentoswassabi.DTO.EntradasEntity</class>
+        <class>com.abctreinamentoswassabi.DTO.HollWasabiEntity</class>
+        <class>com.abctreinamentoswassabi.DTO.NumeroCartaoEntity</class>
+        <class>com.abctreinamentoswassabi.DTO.PedidoEntity</class>
+        <class>com.abctreinamentoswassabi.DTO.ProdutoEntity</class>
+        <class>com.abctreinamentoswassabi.DTO.PromocaoEntity</class>
+        <class>com.abctreinamentoswassabi.DTO.TemakiEspecialEntity</class>
+        <!--        <class>com.abctreinamentosjpa.DTO.TbClienteEntity</class>-->
+<!--        <class>com.abctreinamentosjpa.DTO.TbCursosEntity</class>-->
+<!--        <class>com.abctreinamentosjpa.DTO.TbPagamentoEntity</class>-->
+        <properties>
+                <property name="hibernate.connection.url" value="jdbc:mariadb://localhost:3306/trabalho_netbiis"/>
+                <property name="hibernate.connection.driver_class" value="org.mariadb.jdbc.Driver"/>
+                <property name="hibernate.connection.username" value="root"/>
+                <property name="hibernate.connection.password" value="12345"/>
+            </properties>
+    </persistence-unit>
+
+</persistence>
